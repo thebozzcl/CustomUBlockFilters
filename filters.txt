@@ -19,9 +19,7 @@ www.youtube.com###offer-module
 www.youtube.com##.ytd-donation-shelf-renderer
 www.youtube.com##.ytp-ce-covering-overlay
 www.youtube.com##.ytp-ce-element-show
-www.youtube.com##ytd-rich-section-renderer:has-text(/COVID-19 news/)
-www.youtube.com###dismissable:has-text(/Mix -/)
-www.youtube.com###dismissable:has-text(/My Mix/)
+www.youtube.com###dismissable:has-text(/Mix -|My Mix/)
 www.youtube.com##ytd-rich-item-renderer:has-text(/Mix - |My Mix/)
 www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:has([id^=guide-section-title]:has-text(/More from YouTube/i))
 www.youtube.com###dismissable.ytd-compact-playlist-renderer
