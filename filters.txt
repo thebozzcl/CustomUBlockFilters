@@ -1,0 +1,55 @@
+! Facebook
+www.facebook.com##div.egoOrganicColumn
+www.facebook.com###pagelet_marketplace_recently_viewed_rhc
+www.facebook.com###stories_pagelet_below_composer
+www.facebook.com##[id^=tl_unit_] > div > div > div > div:has-text(/Add a Donate Button/)
+www.facebook.com##[id^=hyperfeed_story_id_]:has-text(/is interested\.|is going\.|went\.|also responded\./)]
+www.facebook.com##div[data-pagelet^="FeedUnit"]:has-text(/is interested\.|is going\.|went\.|also responded\./)]
+www.facebook.com##.hCent
+www.facebook.com##.userContentWrapper > div > div:has-text(/Ask Your Community for Support/)
+facebook.com##div[id^="hyperfeed_story_id_"]:has(a[role^="button"]:has(> span:has([data-content="S"]):not(:has([data-content="1"])):not(:has([data-content="2"])):not(:has([data-content="3"])):not(:has([data-content="4"])):not(:has([data-content="5"])):not(:has([data-content="6"])):not(:has([data-content="7"])):not(:has([data-content="8"])):not(:has([data-content="9"])):not(:has([data-content="w"]))))
+facebook.com##div[data-pagelet^="FeedUnit"]:has(a[role^="link"]:has(> span:has([data-content="S"]):not(:has([data-content="1"])):not(:has([data-content="2"])):not(:has([data-content="3"])):not(:has([data-content="4"])):not(:has([data-content="5"])):not(:has([data-content="6"])):not(:has([data-content="7"])):not(:has([data-content="8"])):not(:has([data-content="9"])):not(:has([data-content="w"]))))
+www.facebook.com##[id^="hyperfeed_story_"]:if(.collapsed_comments)
+www.facebook.com##div[data-pagelet^="FeedUnit"]:has([role^=button]:has(> span:has-text(S)):not(:has-text(1)):not(:has-text(2)):not(:has-text(3)):not(:has-text(4)):not(:has-text(5)):not(:has-text(6)):not(:has-text(7)):not(:has-text(8)):not(span:has-text(9)):not(span:has-text(w)))
+www.facebook.com##div[data-pagelet^="FeedUnit"]:has-text(/Suggested for You/)
+
+! Youtube
+www.youtube.com###dismissable:contains(/reacts to/i)
+www.youtube.com###offer-module
+www.youtube.com##.ytd-donation-shelf-renderer
+www.youtube.com##.ytp-ce-covering-overlay
+www.youtube.com##.ytp-ce-element-show
+www.youtube.com##ytd-rich-section-renderer:has-text(/COVID-19 news/)
+www.youtube.com###dismissable:has-text(/Mix -/)
+www.youtube.com###dismissable:has-text(/My Mix/)
+www.youtube.com##ytd-rich-item-renderer:has-text(/Mix - |My Mix/)
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:has([id^=guide-section-title]:has-text(/More from YouTube/i))
+www.youtube.com###dismissable.ytd-compact-playlist-renderer
+www.youtube.com##ytd-playlist-renderer
+www.youtube.com##a.ytp-suggestion-set:has(.ytp-videowall-still-info-author:not(:has-text(/..*/)))
+
+! Reddit
+www.reddit.com##.happening-now-wrap
+
+! Amazon
+www.amazon.com##.a-carousel
+www.amazon.com###gw-desktop-herotator
+www.amazon.com##.a-alert-warning:has-text(/Prime membership/)
+www.amazon.com###percolate-ui-ilm_div
+www.amazon.com###nav-upnav
+www.amazon.com##[id^=desktop-grid-]:not(:has-text(/for you^/))
+www.amazon.com##[id^=desktop-]:not(:has-text(/for you/))
+www.amazon.com##.adStripe2
+www.amazon.com##.adStripeBox
+
+! Instagram
+www.instagram.com##span:has-text(/Suggestions For You/):nth-ancestor(2)
+www.instagram.com##a:has-text(/^(See|Watch) All/):nth-ancestor(2)
+
+! Annoying video hosts
+ jwcdn.com
+ content.jwplatform.com
+||brightcove.com^$third-party
+
+! Tidal non-customized recommendations
+listen.tidal.com##:not(.artistPage):not(.albumPage):not(.viewPage) > [class^=dynamicPageModule]:not(:has-text(/Recently Played|.* For You|.* for You|Suggested |Because You Listened to |Producers & Songwriters|Your History/))
