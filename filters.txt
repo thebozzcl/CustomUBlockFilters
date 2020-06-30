@@ -31,7 +31,7 @@ www.youtube.com###dismissable.ytd-compact-playlist-renderer
 www.youtube.com##ytd-playlist-renderer
 !! This removes YouTube movies
 www.youtube.com##a.ytp-suggestion-set:has(.ytp-videowall-still-info-author:has-text(/YouTube Movies/))
-www.youtube.com###dismissable:has-text(/YouTube Movies/)
+www.youtube.com##ytd-compact-movie-renderer
 
 ! Reddit
 www.reddit.com##.happening-now-wrap
