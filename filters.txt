@@ -25,13 +25,13 @@ www.youtube.com##.ytp-ce-element-show
 !! I also dislike mixes.
 www.youtube.com###dismissable:has-text(/Mix -|My Mix/)
 www.youtube.com##ytd-rich-item-renderer:has-text(/Mix - |My Mix/)
+www.youtube.com##a.ytp-suggestion-set:has(.ytp-videowall-still-info-author:not(:has-text(/..*/)))
 www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:has([id^=guide-section-title]:has-text(/More from YouTube/i))
 www.youtube.com###dismissable.ytd-compact-playlist-renderer
 www.youtube.com##ytd-playlist-renderer
-!! This removes mixes from the post-play cards in the player.
-www.youtube.com##a.ytp-suggestion-set:has(.ytp-videowall-still-info-author:not(:has-text(/..*/)))
 !! This removes YouTube movies
 www.youtube.com##a.ytp-suggestion-set:has(.ytp-videowall-still-info-author:has-text(/YouTube Movies/))
+www.youtube.com##dismissable:has-text(/YouTube Movies/)
 
 ! Reddit
 www.reddit.com##.happening-now-wrap
