@@ -30,6 +30,8 @@ www.youtube.com###dismissable.ytd-compact-playlist-renderer
 www.youtube.com##ytd-playlist-renderer
 !! This removes mixes from the post-play cards in the player.
 www.youtube.com##a.ytp-suggestion-set:has(.ytp-videowall-still-info-author:not(:has-text(/..*/)))
+!! This removes YouTube movies
+www.youtube.com##a.ytp-suggestion-set:has(.ytp-videowall-still-info-author:has-text(/YouTube Movies/))
 
 ! Reddit
 www.reddit.com##.happening-now-wrap
