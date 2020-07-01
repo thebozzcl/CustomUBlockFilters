@@ -1,5 +1,6 @@
 ! Facebook
-www.facebook.com##div.egoOrganicColumn
+www.facebook.com##.egoOrganicColumn
+www.facebook.com###stories_pagelet_below_composer
 www.facebook.com###pagelet_marketplace_recently_viewed_rhc
 www.facebook.com###stories_pagelet_below_composer
 !! Facebook events are buggy for me, in that friend activity will continue to show up even though I've hidden the page the events come from.
@@ -14,10 +15,14 @@ facebook.com##div[data-pagelet^="FeedUnit"]:has(a[role^="link"]:has(> span:has([
 www.facebook.com##[id^="hyperfeed_story_"]:if(.collapsed_comments)
 www.facebook.com##div[data-pagelet^="FeedUnit"]:has([role^=button]:has(> span:has-text(S)):not(:has-text(1)):not(:has-text(2)):not(:has-text(3)):not(:has-text(4)):not(:has-text(5)):not(:has-text(6)):not(:has-text(7)):not(:has-text(8)):not(span:has-text(9)):not(span:has-text(w)))
 www.facebook.com##div[data-pagelet^="FeedUnit"]:has-text(/Suggested for You/)
+www.facebook.com###video_chats
+www.facebook.com##div[data-pagelet^="FeedUnit"]:has-text(/Send Message|Sign Up|Learn More|Shop Now/)
+www.facebook.com##div[data-pagelet^="FeedUnit"]:has([role^=button]:has(> span > span:matches-css(position: relative):has-text(S)))
+www.facebook.com##div[data-pagelet^="FeedUnit"]:has-text(/People You May Know/)
 
 ! Youtube
 !! I really hate react videos. This takes care of most of them.
-www.youtube.com###dismissable:contains(/reacts to/i)
+www.youtube.com##ytd-rich-item-renderer:has-text(/react(s)? to/i)
 www.youtube.com###offer-module
 www.youtube.com##.ytd-donation-shelf-renderer
 www.youtube.com##.ytp-ce-covering-overlay
@@ -32,9 +37,13 @@ www.youtube.com##ytd-playlist-renderer
 !! This removes YouTube movies
 www.youtube.com##a.ytp-suggestion-set:has(.ytp-videowall-still-info-author:has-text(/YouTube Movies/))
 www.youtube.com##ytd-compact-movie-renderer
+www.youtube.com###watch-checkout-offers
 
 ! Reddit
 www.reddit.com##.happening-now-wrap
+
+! Netflix
+www.netflix.com##.lolomoRow:has-text(/Top 10/)
 
 ! Amazon
 www.amazon.com##.a-carousel
@@ -43,6 +52,9 @@ www.amazon.com##.a-alert-warning:has-text(/Prime membership/)
 www.amazon.com###nav-upnav
 www.amazon.com##.adStripe2
 www.amazon.com##.adStripeBox
+www.amazon.com###percolate-ui-ilm_div
+www.amazon.com###detail-ilm
+www.amazon.com###gw-desktop-herotator
 
 ! Instagram
 !! Blocks the suggestion boxes.
@@ -50,12 +62,18 @@ www.instagram.com##span:has-text(/Suggestions For You/):nth-ancestor(2)
 www.instagram.com##a:has-text(/^(See|Watch) All/):nth-ancestor(2)
 ! Blocks dismissable notifications, since it seems like the 'dismiss' button doesn't work permanently.
 www.instagram.com##main > section > div > div:has(button:has-text(/Close/))
+www.instagram.com##div > div > div > div:has-text(/Suggestions For You/)
+www.instagram.com##div:nth-child(2):has(.coreSpriteDismissLarge)
 
 ! Annoying video hosts
  jwcdn.com
  content.jwplatform.com
+ cdn.jwplayer.com
 ||brightcove.com^$third-party
 
 ! Tidal non-customized recommendations
 !! This blocks any suggestion that's not based on your activity, while trying to leave alone artists, albums and other similar pages where you obviously want to see all the content.
 listen.tidal.com##:not(.artistPage):not(.albumPage):not(.viewPage) > [class^=dynamicPageModule]:not(:has-text(/Recently Played|.* For You|.* for You|Suggested |Because You Listened to |Producers & Songwriters|Your History/))
+
+! Twitch
+www.twitch.tv##.featured-content-carousel
