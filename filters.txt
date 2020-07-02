@@ -38,6 +38,7 @@ www.youtube.com##ytd-playlist-renderer
 www.youtube.com##a.ytp-suggestion-set:has(.ytp-videowall-still-info-author:has-text(/YouTube Movies/))
 www.youtube.com##ytd-compact-movie-renderer
 www.youtube.com###watch-checkout-offers
+www.youtube.com###dismissable:has-text(/.* - Topic/)
 
 ! Reddit
 www.reddit.com##.happening-now-wrap
