@@ -57,14 +57,6 @@ www.amazon.com###percolate-ui-ilm_div
 www.amazon.com###detail-ilm
 www.amazon.com###gw-desktop-herotator
 
-! Instagram
-!! Blocks the suggestion boxes.
-www.instagram.com##span:has-text(/Suggestions For You/):nth-ancestor(2)
-www.instagram.com##a:has-text(/^(See|Watch) All/):nth-ancestor(2)
-! Blocks dismissable notifications, since it seems like the 'dismiss' button doesn't work permanently.
-www.instagram.com##main > section > div > div:has(button:has-text(/Close/))
-www.instagram.com##div > div > div > div:has-text(/Suggestions For You/)
-
 ! Annoying video hosts
  jwcdn.com
  content.jwplatform.com
