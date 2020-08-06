@@ -19,6 +19,10 @@ www.facebook.com###video_chats
 www.facebook.com##div[data-pagelet^="FeedUnit"]:has-text(/Send Message|Sign Up|Learn More|Shop Now/)
 www.facebook.com##div[data-pagelet^="FeedUnit"]:has([role^=button]:has(> span > span:matches-css(position: relative):has-text(S)))
 www.facebook.com##div[data-pagelet^="FeedUnit"]:has-text(/People You May Know/)
+www.facebook.com##div[data-pagelet="RightRail"] > div > div:has-text(/Sponsored/)
+!! Blockers for group post shares and page shares
+www.facebook.com##div[data-pagelet^="FeedUnit"]:has(h5:has(div[aria-label*=' to ']))
+www.facebook.com##div[data-pagelet^="FeedUnit"]:has(div:has(i[aria-label^="Shared with"]) + div:has(i[aria-label^="Shared with"]))
 
 ! Youtube
 !! I really hate react videos. This takes care of most of them.
@@ -47,15 +51,16 @@ www.reddit.com##.happening-now-wrap
 www.netflix.com##.lolomoRow:has-text(/Top 10/)
 
 ! Amazon
-www.amazon.com##.a-carousel
-www.amazon.com###gw-desktop-herotator
-www.amazon.com##.a-alert-warning:has-text(/Prime membership/)
-www.amazon.com###nav-upnav
-www.amazon.com##.adStripe2
-www.amazon.com##.adStripeBox
-www.amazon.com###percolate-ui-ilm_div
-www.amazon.com###detail-ilm
-www.amazon.com###gw-desktop-herotator
+amazon.com##.a-carousel
+amazon.com###gw-desktop-herotator
+amazon.com##.a-alert-warning:has-text(/Prime membership/)
+amazon.com###nav-upnav
+amazon.com##.adStripe2
+amazon.com##.adStripeBox
+amazon.com###percolate-ui-ilm_div
+amazon.com###detail-ilm
+amazon.com###gw-desktop-herotator
+amazon.com##.sbv-video-single-product
 
 ! Annoying video hosts
  jwcdn.com
@@ -69,3 +74,10 @@ listen.tidal.com##:not(.artistPage):not(.albumPage):not(.viewPage) > [class^=dyn
 
 ! Twitch
 www.twitch.tv##.featured-content-carousel
+
+! Google
+www.google.com##.gws-plugins-horizon-jobs__li-ed
+www.google.com###rso > div:has-text(/Explore jobs/):has-text(/Learn more/)
+
+! Other
+fandom.com##.featured-video
