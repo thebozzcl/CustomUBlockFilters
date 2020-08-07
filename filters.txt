@@ -4,8 +4,8 @@ www.facebook.com###stories_pagelet_below_composer
 www.facebook.com###pagelet_marketplace_recently_viewed_rhc
 www.facebook.com###stories_pagelet_below_composer
 !! Facebook events are buggy for me, in that friend activity will continue to show up even though I've hidden the page the events come from.
-www.facebook.com##[id^=hyperfeed_story_id_]:has-text(/is interested\.|is going\.|went\.|also responded\./)]
-www.facebook.com##div[data-pagelet^="FeedUnit"]:has-text(/is interested\.|is going\.|went\.|also responded\./)]
+www.facebook.com##[id^=hyperfeed_story_id_]:has(h4:has-text(/is interested\.|is going\.|went\.|also responded\./))
+www.facebook.com##div[data-pagelet^="FeedUnit"]:has(h4:has-text(/is interested\.|is going\.|went\.|also responded\./))
 !! I barely trust Facebook with my personal activity, I'm not going to use them in anything involving money.
 www.facebook.com##.userContentWrapper > div > div:has-text(/Ask Your Community for Support/)
 www.facebook.com##[id^=tl_unit_] > div > div > div > div:has-text(/Add a Donate Button/)
