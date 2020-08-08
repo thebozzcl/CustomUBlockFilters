@@ -23,6 +23,8 @@ www.facebook.com##div[data-pagelet="RightRail"] > div > div:has-text(/Sponsored/
 !! Blockers for group post shares and page shares
 www.facebook.com##div[data-pagelet^="FeedUnit"]:has(h5:has(div[aria-label*=' to ']))
 www.facebook.com##div[data-pagelet^="FeedUnit"]:has(div:has(i[aria-label^="Shared with"]) + div:has(i[aria-label^="Shared with"]))
+!! Blocker for fundraisers
+www.facebook.com##div[data-pagelet^="FeedUnit"]:has(div[role="progressbar"])
 
 ! Youtube
 !! I really hate react videos. This takes care of most of them.
