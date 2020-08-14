@@ -72,7 +72,7 @@ amazon.com##.sbv-video-single-product
 
 ! Tidal non-customized recommendations
 !! This blocks any suggestion that's not based on your activity, while trying to leave alone artists, albums and other similar pages where you obviously want to see all the content.
-listen.tidal.com##:not(.artistPage):not(.albumPage):not(.viewPage) > [class^=dynamicPageModule]:not(:has-text(/Recently Played|.* For You|.* for You|Suggested |Because You Listened to |Producers & Songwriters|Your History/))
+
 
 ! Twitch
 www.twitch.tv##.featured-content-carousel
