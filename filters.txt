@@ -6,6 +6,8 @@ www.facebook.com###stories_pagelet_below_composer
 !! Facebook events are buggy for me, in that friend activity will continue to show up even though I've hidden the page the events come from.
 www.facebook.com##[id^=hyperfeed_story_id_]:has(h4:has-text(/is interested\.|is going\.|went\.|also responded\./))
 www.facebook.com##div[data-pagelet^="FeedUnit"]:has(h4:has-text(/is interested\.|is going\.|went\.|also responded\./))
+www.facebook.com##div[data-pagelet^="FeedUnit"]:has(h4:has-text(/ commented\./))
+www.facebook.com##div[data-pagelet^="FeedUnit"]:has(span:has-text(/ replied to a /):has(a[role="link"]:has-text(/comment/)))
 !! I barely trust Facebook with my personal activity, I'm not going to use them in anything involving money.
 www.facebook.com##.userContentWrapper > div > div:has-text(/Ask Your Community for Support/)
 www.facebook.com##[id^=tl_unit_] > div > div > div > div:has-text(/Add a Donate Button/)
@@ -25,6 +27,9 @@ www.facebook.com##div[data-pagelet^="FeedUnit"]:has(h5:has(div[aria-label*=' to 
 www.facebook.com##div[data-pagelet^="FeedUnit"]:has(div:has(i[aria-label^="Shared with"]) + div:has(i[aria-label^="Shared with"]))
 !! Blocker for fundraisers
 www.facebook.com##div[data-pagelet^="FeedUnit"]:has(div[role="progressbar"])
+!! Random annoyances
+www.facebook.com##div[data-pagelet^="FeedUnit"]:has(span[dir="auto"]:has-text(/Coronavirus \(COVID-19\) Information/))
+www.facebook.com##div[data-pagelet^="FeedUnit"]:has(span[dir="auto"]:has-text(/Suggested Events/))
 
 ! Youtube
 !! I really hate react videos. This takes care of most of them.
@@ -45,6 +50,9 @@ www.youtube.com##a.ytp-suggestion-set:has(.ytp-videowall-still-info-author:has-t
 www.youtube.com##ytd-compact-movie-renderer
 www.youtube.com###watch-checkout-offers
 www.youtube.com###dismissable:has-text(/.* - Topic/)
+www.youtube.com##ytd-shelf-renderer
+www.youtube.com##ytd-horizontal-card-list-renderer
+www.youtube.com###dismissable:has(.badge-style-type-live-now)
 
 ! Reddit
 www.reddit.com##.happening-now-wrap
@@ -63,6 +71,7 @@ amazon.com###percolate-ui-ilm_div
 amazon.com###detail-ilm
 amazon.com###gw-desktop-herotator
 amazon.com##.sbv-video-single-product
+www.amazon.com###heroQuickPromo_feature_div
 
 ! Annoying video hosts
  jwcdn.com
