@@ -30,6 +30,7 @@ www.facebook.com##div[data-pagelet^="FeedUnit"]:has(div[role="progressbar"])
 !! Random annoyances
 www.facebook.com##div[data-pagelet^="FeedUnit"]:has(span[dir="auto"]:has-text(/Coronavirus \(COVID-19\) Information/))
 www.facebook.com##div[data-pagelet^="FeedUnit"]:has(span[dir="auto"]:has-text(/Suggested Events/))
+www.facebook.com##div[data-pagelet^="FeedUnit"]:has(span:has-text(/Suggested Live Gaming Video/))
 
 ! Youtube
 !! I really hate react videos. This takes care of most of them.
