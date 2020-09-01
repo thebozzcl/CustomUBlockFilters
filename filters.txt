@@ -54,6 +54,10 @@ www.youtube.com###dismissable:has-text(/.* - Topic/)
 www.youtube.com##ytd-shelf-renderer
 www.youtube.com##ytd-horizontal-card-list-renderer
 www.youtube.com###dismissable:has(.badge-style-type-live-now)
+!! This removes YouTube animated previews
+i.ytimg.com/an_webp
+!! Remove clarify box
+www.youtube.com###clarify-box
 
 ! Reddit
 www.reddit.com##.happening-now-wrap
