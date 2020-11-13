@@ -12,6 +12,7 @@ www.facebook.com##div[data-pagelet^="FeedUnit"]:has(span:has-text(/ replied to a
 www.facebook.com##.userContentWrapper > div > div:has-text(/Ask Your Community for Support/)
 www.facebook.com##[id^=tl_unit_] > div > div > div > div:has-text(/Add a Donate Button/)
 !! The lenghts to which we have to go to block ads on Facebook is staggering. This is utterly ridiculous.
+www.facebook.com##div[data-pagelet*="FeedUnit"]:has(span[class]:first-child + [role*="n"] > span:only-child > span:first-child + span:last-child)
 facebook.com##div[id^="hyperfeed_story_id_"]:has(a[role^="button"]:has(> span:has([data-content="S"]):not(:has([data-content="1"])):not(:has([data-content="2"])):not(:has([data-content="3"])):not(:has([data-content="4"])):not(:has([data-content="5"])):not(:has([data-content="6"])):not(:has([data-content="7"])):not(:has([data-content="8"])):not(:has([data-content="9"])):not(:has([data-content="w"]))))
 facebook.com##div[data-pagelet^="FeedUnit"]:has(a[role^="link"]:has(> span:has([data-content="S"]):not(:has([data-content="1"])):not(:has([data-content="2"])):not(:has([data-content="3"])):not(:has([data-content="4"])):not(:has([data-content="5"])):not(:has([data-content="6"])):not(:has([data-content="7"])):not(:has([data-content="8"])):not(:has([data-content="9"])):not(:has([data-content="w"]))))
 www.facebook.com##[id^="hyperfeed_story_"]:if(.collapsed_comments)
@@ -31,6 +32,7 @@ www.facebook.com##div[data-pagelet^="FeedUnit"]:has(div[role="progressbar"])
 www.facebook.com##div[data-pagelet^="FeedUnit"]:has(span[dir="auto"]:has-text(/Coronavirus \(COVID-19\) Information/))
 www.facebook.com##div[data-pagelet^="FeedUnit"]:has(span[dir="auto"]:has-text(/Suggested Events/))
 www.facebook.com##div[data-pagelet^="FeedUnit"]:has(span:has-text(/Suggested Live Gaming Video/))
+www.facebook.com##div[data-pagelet*="FeedUnit"]:has-text(/^.*, it's almost your birthday!/)
 
 ! Youtube
 !! I really hate react videos. This takes care of most of them.
@@ -58,9 +60,12 @@ www.youtube.com###dismissable:has(.badge-style-type-live-now)
 i.ytimg.com/an_webp
 !! Remove clarify box
 www.youtube.com###clarify-box
+www.youtube.com##.ytd-feed-filter-chip-bar-renderer.style-scope
+www.youtube.com##.ytd-compact-promoted-item-renderer
 
 ! Reddit
 www.reddit.com##.happening-now-wrap
+www.reddit.com###SearchDropdownContent
 
 ! Netflix
 www.netflix.com##.lolomoRow:has-text(/Top 10/)
